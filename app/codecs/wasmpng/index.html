@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>PNG Image Compressor</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>PNG Image Compressor <img src="wa.svg" class="wa-logo" /></h1>
+    <div class="drag-target">
+        <p>Drag your PNG image or click here to open.</p>
+        <p class="drag-error error"></p>
+    </div>
+    <div class="config">
+        <select class="sel-colors">
+            <option value="2">2 colors</option>
+            <option value="4">4 colors</option>
+            <option value="8">8 colors</option>
+            <option value="16">16 colors</option>
+            <option value="32">32 colors</option>
+            <option value="64">64 colors</option>
+            <option value="96">96 colors</option>
+            <option value="128" selected>128 colors</option>
+            <option value="192">192 colors</option>
+            <option value="256">256 colors</option>
+        </select>
+        &nbsp;
+        <select class="sel-dithering">
+            <option value="0" selected>No dithering</option>
+            <option value="0.25">25% dithering</option>
+            <option value="0.5">50% dithering</option>
+            <option value="0.75">75% dithering</option>
+            <option value="1">Full dithering</option>
+        </select>
+        &nbsp;
+        <label>
+            <input type="checkbox" checked class="check-auto-download" /> auto-download
+        </label>
+        <a href="#" class="link-download">download</a>
+    </div>
+    <div class="work">
+        <pre class="log"></pre>
+        <div class="images"></div>
+    </div>
+    <input type="file" class="input-file" accept="image/png" />
+    <div class="footer">⟨⟩ with ♡ by Antelle, <a href="https://raw.githubusercontent.com/antelle/wasm-image-compressor/master/LICENSE" target="_blank">GPL license</a>,
+        images are compressed with <a href="https://pngquant.org/lib/" target="_blank">libimagequant</a>
+        and saved with <a href="http://www.libpng.org/pub/png/libpng.html" target="_blank">libpng</a>.</div>
+</body>
+</html>

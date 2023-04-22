@@ -1,0 +1,1 @@
+const { PNG } = require('pngjs');

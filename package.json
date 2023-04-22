@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "forever": "^4.0.3",
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "path": "^0.12.7",
+    "pngjs": "^7.0.0",
+    "pngjs3": "^6.0.1",
+    "pngquant": "^4.1.0",
+    "upng-js": "^2.1.0",
+    "wasm-feature-detect": "^1.5.1",
+    "zlib": "^1.0.5"
+  },
+  "name": "picsponge",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.16"
+  }
+}
